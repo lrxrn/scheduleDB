@@ -2,20 +2,11 @@
 const fs = require('fs');
 const path = require('path');
 
-// prompt user for the file names
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-readline.question('Enter the first json file name: ', (firstFile) => {
-    readline.question('Enter the second json file name: ', (secondFile) => {
-        readline.question('Enter the output file name: ', (outputFile) => {
-            mergeJson(firstFile, secondFile, outputFile);
-            readline.close();
-        });
-    });
-});
+// get files from arguments
+const firstFile = process.argv[2];
+const secondFile = process.argv[3];
+const outputFile = process.argv[4];
+mergeJson(firstFile, secondFile, outputFile);
 
 // Deep merge function
 function deepMerge(obj1, obj2) {
@@ -67,12 +58,6 @@ function mergeJson(firstFile, secondFile, outputFile) {
     const mergedJson = deepMerge(firstJson, secondJson);
     // log the json object count in the merged file
     console.log(`Merged file has ${Object.keys(mergedJson).length} json objects and has ${Object.values(mergedJson).flat().length} values`);
-
-    // Ask the user to confirm the merge
-    const readline = require('readline').createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
 
     writeJsonToFile(outputFile, mergedJson);
 }
