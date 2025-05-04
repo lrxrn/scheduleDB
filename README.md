@@ -2,8 +2,8 @@
 
 <div align="center">
   
-  ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/mikko/scheduleDB/weekly-fetch.yml?style=for-the-badge&logo=github-actions&logoColor=white&label=Weekly%20Update)
-  ![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/mikko/scheduleDB/main/output.json&query=$.lastUpdated&label=Last%20Updated&style=for-the-badge&color=blue)
+  ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/lrxrn/scheduleDB/weekly-fetch.yml?style=for-the-badge&logo=github-actions&logoColor=white&label=Weekly%20Update)
+  ![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/lrxrn/scheduleDB/main/output.json&query=$.lastUpdated&label=Last%20Updated&style=for-the-badge&color=blue)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
   
 </div>
