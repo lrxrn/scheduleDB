@@ -5,6 +5,7 @@ on:
     # Runs at 12:00 AM (GMT+8) every Monday
     # Note: GitHub Actions uses UTC time, so 16:00 UTC = 00:00 GMT+8
     - cron: '0 16 * * 0'
+    - cron: '0 16 * * 4'
   workflow_dispatch:
     # Allows manual triggering of the workflow
 
